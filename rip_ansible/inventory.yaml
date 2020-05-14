@@ -8,7 +8,7 @@ all:
 
   B:
     ansible_host: 192.168.1.40
-    if_config = {'ge-0/0/1' : '42.7.1.2/24', 'lo0' : '42.7.20.1/24' }
+    if_config : {'ge-0/0/1' : '42.7.1.2/24', 'lo0' : '42.7.20.1/24' }
     if_passive : {'ge-0/0/1' : '', 'lo0' : 'passive'}
 
 vars:
