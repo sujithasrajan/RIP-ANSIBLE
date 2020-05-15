@@ -1,0 +1,42 @@
+<ping-results>
+  <target-host>42.7.10.1</target-host>
+  <target-ip>42.7.10.1</target-ip>
+  <packet-size>56</packet-size>
+  <probe-result date-determined="1589529643">
+    <probe-index>1</probe-index>
+    <probe-success/>
+    <sequence-number>0</sequence-number>
+    <ip-address>42.7.10.1</ip-address>
+    <time-to-live>64</time-to-live>
+    <response-size>64</response-size>
+    <rtt>1654</rtt>
+  </probe-result>
+  <probe-result date-determined="1589529644">
+    <probe-index>2</probe-index>
+    <probe-success/>
+    <sequence-number>1</sequence-number>
+    <ip-address>42.7.10.1</ip-address>
+    <time-to-live>64</time-to-live>
+    <response-size>64</response-size>
+    <rtt>208</rtt>
+  </probe-result>
+  <probe-result date-determined="1589529645">
+    <probe-index>3</probe-index>
+    <probe-success/>
+    <sequence-number>2</sequence-number>
+    <ip-address>42.7.10.1</ip-address>
+    <time-to-live>64</time-to-live>
+    <response-size>64</response-size>
+    <rtt>242</rtt>
+  </probe-result>
+  <probe-results-summary>
+    <probes-sent>3</probes-sent>
+    <responses-received>3</responses-received>
+    <packet-loss>0</packet-loss>
+    <rtt-minimum>208</rtt-minimum>
+    <rtt-maximum>1654</rtt-maximum>
+    <rtt-average>701</rtt-average>
+    <rtt-stddev>673</rtt-stddev>
+  </probe-results-summary>
+  <ping-success/>
+</ping-results>
