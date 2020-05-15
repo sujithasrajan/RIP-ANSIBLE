@@ -1,0 +1,13 @@
+<firewall-information>
+  <filter-information>
+    <filter-name>__default_bpdu_filter__</filter-name>
+  </filter-information>
+  <filter-information>
+    <filter-name>allow_tcp</filter-name>
+    <counter>
+      <counter-name>count_nonmgmt</counter-name>
+      <packet-count>334</packet-count>
+      <byte-count>24060</byte-count>
+    </counter>
+  </filter-information>
+</firewall-information>

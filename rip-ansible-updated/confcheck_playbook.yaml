@@ -1,0 +1,68 @@
+- name: RIP table info Router A and B
+  hosts: all
+  gather_facts: no
+  roles:
+  - Juniper.junos
+  connection: local
+  tasks:
+  - name: routing table info
+    juniper_junos_rpc:
+     rpcs:
+     - "get-route-information"
+     kwargs:
+     - protocol: "rip"
+     formats: xml
+     dest: "{{ ansible_host }}-routes.txt"
+     provider:
+      host: "{{ ansible_host }}"
+      user: labuser
+      password: Labuser
+
+- name: Ping Info Router A
+  hosts: A
+  gather_facts: no
+  roles:
+  - Juniper.junos
+  connection: local
+  tasks:
+  - name: ping info
+    juniper_junos_command:
+      commands:
+        - ping 42.7.10.1
+      formats: xml
+      dest: "{{ ansible_host }}-routes.txt"
+      provider:
+        host: "{{ ansible_host }}"
+        user: labuser
+        password: Labuser
+
+  - name: firewall info
+    juniper_junos_command:
+      commands:
+        - show firewall
+      formats: xml
+      dest: "{{ ansible_host }}-firewall.txt"
+      provider:
+        host: "{{ ansible_host }}"
+        user: labuser
+        password: Labuser
+
+- name: Ping info Router B
+  hosts: B
+  gather_facts: no
+  roles:
+  - Juniper.junos
+  connection: local
+  tasks:
+  - name: ping info
+    junos_command:
+      commands:
+        - ping 42.7.10.1
+      formats: xml
+      dest: "{{ ansible_host }}-routes.txt"
+      provider:
+        host: "{{ ansible_host }}"
+        user: labuser
+        password: Labuser
+
+

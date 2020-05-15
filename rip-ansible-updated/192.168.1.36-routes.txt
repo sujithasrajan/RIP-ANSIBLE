@@ -1,0 +1,58 @@
+<route-information>
+  <!-- keepalive -->
+  <route-table>
+    <table-name>inet.0</table-name>
+    <destination-count>8</destination-count>
+    <total-route-count>9</total-route-count>
+    <active-route-count>8</active-route-count>
+    <holddown-route-count>0</holddown-route-count>
+    <hidden-route-count>0</hidden-route-count>
+    <rt style="brief">
+      <rt-destination>42.7.10.0/24</rt-destination>
+      <rt-entry>
+        <active-tag>*</active-tag>
+        <current-active/>
+        <last-active/>
+        <protocol-name>RIP</protocol-name>
+        <preference>100</preference>
+        <age seconds="9221">02:33:41</age>
+        <metric>2</metric>
+        <rt-tag>0</rt-tag>
+        <nh>
+          <selected-next-hop/>
+          <to>42.7.1.1</to>
+          <via>ge-0/0/1.0</via>
+        </nh>
+      </rt-entry>
+    </rt>
+    <rt style="brief">
+      <rt-destination>192.168.1.0/24</rt-destination>
+      <rt-entry>
+        <active-tag/>
+        <protocol-name>RIP</protocol-name>
+        <preference>100</preference>
+        <age seconds="9221">02:33:41</age>
+        <metric>2</metric>
+        <rt-tag>0</rt-tag>
+        <nh>
+          <selected-next-hop/>
+          <to>42.7.1.1</to>
+          <via>ge-0/0/1.0</via>
+        </nh>
+      </rt-entry>
+    </rt>
+    <rt style="brief">
+      <rt-destination>224.0.0.9/32</rt-destination>
+      <rt-entry>
+        <active-tag>*</active-tag>
+        <current-active/>
+        <last-active/>
+        <protocol-name>RIP</protocol-name>
+        <preference>100</preference>
+        <age seconds="9227">02:33:47</age>
+        <metric>1</metric>
+        <nh-type>MultiRecv</nh-type>
+      </rt-entry>
+    </rt>
+  </route-table>
+</route-information>
