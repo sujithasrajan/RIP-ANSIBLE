@@ -5,9 +5,12 @@ This playbook does the following:
 The Python script performs the following configuration operations:
 
 1. Configures the interfaces according to the table below (including the loopback interface):
-Interface    connected physical interface   loopback interface
+Interface  |  connected physical interface |  loopback interface
+-----------| ----------------------------- | -------------
 Router A     42.7.1.1/24                     42.7.10.1/24
+-----------| ----------------------------- | -------------
 Router B     42.7.1.2/24                     42.7.20.1/24
+-----------| ----------------------------- | -------------
 
  
 2. Configures RIP routing protocol on the connected interfaces. 
