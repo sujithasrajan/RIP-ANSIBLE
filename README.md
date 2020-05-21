@@ -21,7 +21,7 @@ physical interface of one of the routers that
     b) denies management access from any other IP addresses and counts the attempts to do so; 
     c) allows any non-management traffic from anywhere and counts the nonmanagement packets. 
 
- 5.Check's the routers routing tables and make sure that the network configured on the remote router’s loopback interface shows up in the local router’s routing table.
+  5. Check's the routers routing tables and make sure that the network configured on the remote router’s loopback interface shows up in the local router’s routing table.
 
  6. Ping's the remote loopback interface from the local router and verify that the loopback interface is reachable. 
 
