@@ -11,11 +11,11 @@ Router_loop = ['42.7.10.1/24','42.7.20.1/24']
 for i in range(2):
 	device = Device(host=host_ip_list[i], user='labuser', password='Labuser', normalize=True)
 	if_config = {'ge-0/0/1': Router_Phy[i],'lo0':Router_loop[i]}
-	if_config_check = {'ge-0/0/1': '','lo0' : 'passive' }
+	if_passive = {'ge-0/0/1': '','lo0' : 'passive' }
 
 	
 
-	var_dict = {'if_config':if_config, 'if_config_check': if_config_check}
+	var_dict = {'if_config':if_config, 'if_passive': if_passive}
                              
 	try:
 		device.open()
